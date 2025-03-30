@@ -3,12 +3,12 @@ import { Github, Linkedin, Mail, Youtube, ExternalLink, BookOpen, Award, Briefca
 
 function App() {
   return (
-    <div className="min-h-screen bg-white">
+    <div className="max-w-[1200px] mx-auto px-4 bg-blue-200 bg-white">
       {/* Hero Section */}
       <div 
-        className="relative h-[60vh] bg-cover bg-center"
+        className="relative h-[50vh] bg-cover bg-center"
         style={{
-          backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-1.2.1&auto=format&fit=crop&w=2850&q=80")'
+          backgroundImage: 'linear-gradient(rgba(0, 0, 0.0, 0.0), rgba(0, 0, 0, 0.7)), url("https://plus.unsplash.com/premium_photo-1661878265739-da90bc1af051?q=80&w=1986&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")'
         }}
       >
         <div className="absolute inset-0 bg-gradient-to-b from-black/50 to-black/20">
@@ -28,12 +28,15 @@ function App() {
                   Get in Touch
                 </a>
                 <a 
-                  href="#" 
+                   href="https://drive.google.com/file/d/1Ffi77ft63fJPxKwWCry3YnVdTepuANQl/view?usp=drive_link" 
+                   target="_blank" 
+                   rel="noopener noreferrer" 
                   className="inline-flex items-center px-6 py-3 bg-white text-gray-900 hover:bg-gray-100 transition-colors duration-300 rounded-lg text-lg font-semibold"
-                >
+                 >
                   <Download className="w-5 h-5 mr-2" />
                   Download Resume
-                </a>
+                  </a>
+
               </div>
             </div>
           </div>
@@ -45,7 +48,7 @@ function App() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center">
-              <span className="text-xl font-bold text-gray-900">JD</span>
+              <span className="text-xl font-bold text-gray-900">DJ</span>
             </div>
             <div className="flex space-x-8">
               <a href="#about" className="text-gray-600 hover:text-blue-600 font-medium">About</a>
@@ -86,7 +89,9 @@ function App() {
                   <h3 className="text-lg font-semibold text-gray-900">Experience</h3>
                 </div>
                 <p className="text-gray-700">Data Analyst Trainee</p>
-                <p className="text-gray-600 text-sm">Virtual Internship</p>
+                <p className="text-gray-600 text-sm">Virtual Internship</p><br></br>
+                <p className="text-gray-700">Data Analyst Intern</p>
+                <p className="text-gray-600 text-sm">Cognifyz_Technologies</p>
               </div>
               <div className="bg-gray-50 rounded-xl p-6">
                 <div className="flex items-center mb-4">
@@ -150,16 +155,16 @@ function App() {
             <ProjectCard 
               title="Amazon Sales Data analysis"
               description="Developed a comprehensive analytics dashboard that increased sales performance  through data-driven insights."
-              tools={["Python", "PowerBI", "SQL"]}
-              image="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&auto=format&fit=crop&w=2850&q=80"
-              link=""
+              tools={["Python", "PowerBI", "SQL","Excel"]}
+              image="https://images.unsplash.com/photo-1608222351212-18fe0ec7b13b?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8ZGFzaGJvYXJkfGVufDB8fDB8fHww"
+              link="https://github.com/divyasri-jegan-11/Amazon-Sales-Analysis"
             />
             <ProjectCard 
               title="Customer Segmentation Engine"
-              description="Built a machine learning model that improved marketing ROI by 40% through precise customer segmentation and targeted campaign optimization."
-              tools={["Python", "Scikit-learn", "Power BI"]}
+              description="Built a customer segmentation model using clustering and enhancing purchase using recommendation system."
+              tools={["Python", "Scikit-learn", "Machine Learning model"]}
               image="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-1.2.1&auto=format&fit=crop&w=2850&q=80"
-              link="#"
+              link="https://github.com/divyasri-jegan-11/Customer-Segmentation"
             />
           </div>
         </section>
@@ -173,9 +178,9 @@ function App() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <div className="bg-white rounded-2xl shadow-xl p-6 border border-gray-100">
               <Award className="w-8 h-8 text-blue-600 mb-4" />
-              <h3 className="text-xl font-semibold text-gray-900 mb-2">Google Data Analytics</h3>
-              <p className="text-gray-600">Professional Certificate</p>
-              <p className="text-gray-500 text-sm mt-2">Completed 2023</p>
+              <h3 className="text-xl font-semibold text-gray-900 mb-2">Accenture Job Simulation</h3>
+              <p className="text-gray-600">Data Analytics and Visualization</p>
+              <p className="text-gray-500 text-sm mt-2">Completed 2024</p>
             </div>
             <div className="bg-white rounded-2xl shadow-xl p-6 border border-gray-100">
               <Award className="w-8 h-8 text-blue-600 mb-4" />
@@ -210,7 +215,7 @@ function App() {
                     <Mail className="w-5 h-5 mr-3" />
                     contact@divyasrijegan.com
                   </a>
-                  <a href="www.linkedin.com/in/divyasri-jegan" target="_blank" rel="noopener noreferrer" className="flex items-center text-gray-700 hover:text-blue-600">
+                  <a href="https://www.linkedin.com/in/divyasri-jegan-407a3223b" target="_blank" rel="noopener noreferrer" className="flex items-center text-gray-700 hover:text-blue-600">
                     <Linkedin className="w-5 h-5 mr-3" />
                     LinkedIn Profile
                   </a>
