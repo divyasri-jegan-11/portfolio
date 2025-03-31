@@ -3,7 +3,7 @@ import { Github, Linkedin, Mail, Youtube, ExternalLink, BookOpen, Award, Briefca
 
 function App() {
   return (
-    <div className="max-w-[1200px] mx-auto px-4 bg-blue-200 bg-white">
+    <div className="max-w-[1200px] mx-auto px-4 bg-200 bg-white">
       {/* Hero Section */}
       <div 
         className="relative h-[50vh] bg-cover bg-center"
